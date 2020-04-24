@@ -300,6 +300,7 @@ GameObject:
   - component: {fileID: 457550683}
   - component: {fileID: 457550682}
   - component: {fileID: 457550687}
+  - component: {fileID: 457550688}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -403,6 +404,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   playerbody: {fileID: 855404681}
+--- !u!114 &457550688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 457550681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: b43ef3cd61653ef47a6763359a7b1e58, type: 2}
 --- !u!1001 &468058830
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -493,7 +507,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a3e270d3a40da90458c342f9eb6d13da, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.627
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -752,6 +766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81858beab9037294e8a0013c7c7c0a86, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newLight: {fileID: 1696182489}
 --- !u!1 &1012921916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 119512, guid: 5578b82f17c954843901e8b68ca21dcc,
@@ -986,7 +1001,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554190612}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.59, z: -0}
+  m_LocalPosition: {x: 0, y: 0.49, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1012921919}
@@ -1143,6 +1158,25 @@ Light:
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1709436760 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 121128, guid: b73c6c1069411b947aaaa9d12c37c652,
+    type: 3}
+  m_PrefabInstance: {fileID: 468058830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1709436761
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709436760}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7150211, y: 3.1539106, z: 2.7030396}
+  m_Center: {x: 0.06533378, y: 1.3159657, z: 0.046627223}
 --- !u!1 &1986860873
 GameObject:
   m_ObjectHideFlags: 0

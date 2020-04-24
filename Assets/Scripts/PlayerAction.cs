@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
 {
+    public Light newLight;
+
+    bool isOn = false;
     // Start is called before the first frame update
     void Start()
     {
-        
+        newLight.enabled = isOn;
     }
 
     // Update is called once per frame
@@ -25,6 +28,20 @@ public class PlayerAction : MonoBehaviour
                 {
                     Destroy(sp.gameObject);
                 }
+            }
+        }
+
+        if (Input.GetKeyDown("f"))
+        {
+            if (!isOn)
+            {
+                isOn = true;
+                newLight.enabled = isOn;
+            }
+            else
+            {
+                isOn = false;
+                newLight.enabled = isOn;
             }
         }
     }
