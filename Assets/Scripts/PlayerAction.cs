@@ -7,7 +7,7 @@ public class PlayerAction : MonoBehaviour
     public Light newLight;
     public GameObject rockPrefab;
 
-    int runes = 4;
+    int runes = 0;
     int runesPlaced = 0;
     bool isOn = false;
     bool[] isActivated = new bool[] {false, false, false, false};
