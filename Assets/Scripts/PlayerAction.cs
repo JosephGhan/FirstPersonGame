@@ -1,13 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAction : MonoBehaviour
 {
     public Light newLight;
     public GameObject rockPrefab;
+    public int runes = 0;
 
-    int runes = 0;
     int runesPlaced = 0;
     bool isOn = false;
     bool[] isActivated = new bool[] {false, false, false, false};
@@ -44,7 +45,11 @@ public class PlayerAction : MonoBehaviour
 
     void IsOver()
     {
-
+        if (runesPlaced == 4)
+        {
+            print("Over");
+            SceneManager.LoadScene("_Scene_1");
+        }
     }
 
     void ActionE()
